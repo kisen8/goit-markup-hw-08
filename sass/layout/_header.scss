@@ -1,0 +1,133 @@
+/* index.html */
+.header {
+  border-bottom: 1px solid #ececec;
+
+  background-color: var(--white-color);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--accent-color);
+
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+}
+
+.logo__dark {
+  color: var(--primary-text-color);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav__item {
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.nav__link {
+  position: relative;
+  transition: color 250ms var(--cubic);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--current {
+    color: var(--accent-color);
+    &::after {
+      position: absolute;
+      content: '';
+      min-width: 48px;
+      height: 4px;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+
+      background: #2196f3;
+      border-radius: 2px;
+    }
+  }
+}
+
+.feedback {
+  display: flex;
+  margin-left: auto;
+}
+
+.feedback__item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.feedback__link {
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.feedback__icons-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--text-color);
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+  .feedback__link:hover &,
+  .feedback__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.feedback__icons-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--text-color);
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
+  .feedback__link:hover &,
+  .feedback__link:focus & {
+    fill: var(--accent-color);
+  }
+}

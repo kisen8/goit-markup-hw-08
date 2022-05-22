@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bgc-hero-footer);
+}
+
+.address-block {
+  flex-grow: 1;
+}
+
+.logo-bottom {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-light {
+  color: var(--white-color);
+}
+
+.contacts {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts a {
+  color: var(--address-info-footer);
+}
+
+.contacts a.address {
+  display: inline-block;
+
+  color: var(--white-color);
+}
+
+.contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
