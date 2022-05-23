@@ -17,44 +17,55 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
-        <nav class="navigation">
-          <a lang="en" href="./index.html" class="logo">
-            Web<span lang="en" class="logo__dark">Studio</span>
-          </a>
+        <a lang="en" href="./index.html" class="logo">
+          Web<span lang="en" class="logo__dark">Studio</span>
+        </a>
+        <button class="mob-menu-open-btn" type="button">
+          <svg class="mob-menu-open-icon">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <button class="mob-menu-close-btn" type="button">
+            <svg class="mob-menu-close-icon">
+              <use href="./images/icons.svg#icon-mob-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
 
-          <ul class="nav">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+          <ul class="feedback">
+            <li class="feedback__item">
+              <a lang="en" href="mailto:info@devstudio.com" class="feedback__link">
+                <svg class="feedback__icons-mail">
+                  <use href="./images/icons.svg#icon-mail "></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link">Портфолио</a>
+            <li class="feedback__item">
+              <a href="tel:+380961111111" class="feedback__link">
+                <svg class="feedback__icons-tel">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
-        </nav>
-
-        <ul class="feedback">
-          <li class="feedback__item">
-            <a lang="en" href="mailto:info@devstudio.com" class="feedback__link">
-              <svg class="feedback__icons-mail">
-                <use href="./images/icons.svg#icon-mail "></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="feedback__item">
-            <a href="tel:+380961111111" class="feedback__link">
-              <svg class="feedback__icons-tel">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <!-- Основа -->
     <main>
@@ -62,7 +73,7 @@
       <!-- <section class="hero hero--overlay">
         <div class="container">
           <h1 class="hero__title">
-            Эффективные решения <br />
+            Эффективные решения<br />
             для вашего бизнеса
           </h1>
           <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
