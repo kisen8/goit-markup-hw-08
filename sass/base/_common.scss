@@ -17,6 +17,10 @@ a {
 // .link {
 //   text-decoration: none;
 // }
+.no-scroll {
+  overflow: hidden;
+}
+
 .blocks {
   display: flex;
   align-items: baseline;
