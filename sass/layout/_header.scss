@@ -161,11 +161,14 @@
 }
 
 .feedback__item {
-  &:not(:first-child) {
-    // margin-bottom: 32px;
-    // & + & {
-    //   margin-left: 30px;
-    // }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      // margin-bottom: 32px;
+      // & + & {
+      //   margin-left: 30px;
+      // }
+    }
   }
 }
 .feedback__link {

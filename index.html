@@ -186,16 +186,52 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="works">
             <li class="works__item">
-              <img class="works__image" src="./images/img1.jpg" alt="programing" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-work1-1x.jpg 1x,
+                    ./images/img-desk/desk-work1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-desk/desk-work1-1x.jpg" alt="work1" />
+              </picture>
+
               <p class="works__text">Десктопные приложения</p>
             </li>
 
             <li class="works__item">
-              <img class="works__image" src="./images/img2.jpg" alt="designing" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-work2-1x.jpg 1x,
+                    ./images/img-desk/desk-work2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-desk/desk-work2-1x.jpg" alt="work2" />
+              </picture>
+
               <p class="works__text">Мобильные приложения</p>
             </li>
             <li class="works__item">
-              <img class="works__image" src="./images/img3.jpg" alt="styling" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-work3-1x.jpg 1x,
+                    ./images/img-desk/desk-work3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-desk/desk-work3-1x.jpg" alt="work3" />
+              </picture>
+
               <p class="works__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -209,7 +245,31 @@
 
           <ul class="team">
             <li class="team__item">
-              <img class="team__image" src="./images/ihor.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-ihor-1x.jpg 1x,
+                    ./images/img-desk/desk-ihor-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-tab/tab-ihor-1x.jpg 1x, ./images/img-tab/tab-ihor-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-mob/mob-ihor-1x.jpg 1x, ./images/img-mob/mob-ihor-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-mob/mob-ihor-1x.jpg" alt="ihor" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -246,7 +306,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./images/olha.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-olha-1x.jpg 1x,
+                    ./images/img-desk/desk-olha-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-tab/tab-olha-1x.jpg 1x, ./images/img-tab/tab-olha-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-mob/mob-olha-1x.jpg 1x, ./images/img-mob/mob-olha-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-mob/mob-olha-1x.jpg" alt="olha" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -283,7 +367,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./images/nikolay.jpg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-niko-1x.jpg 1x,
+                    ./images/img-desk/desk-niko-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-tab/tab-niko-1x.jpg 1x, ./images/img-tab/tab-niko-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-mob/mob-niko-1x.jpg 1x, ./images/img-mob/mob-niko-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-mob/mob-niko-1x.jpg" alt="niko" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -320,7 +428,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__image" src="./images/mihail.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-desk/desk-miha-1x.jpg 1x,
+                    ./images/img-desk/desk-miha-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-tab/tab-miha-1x.jpg 1x, ./images/img-tab/tab-miha-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes=""
+                  type=""
+                />
+                <source
+                  srcset="./images/img-mob/mob-miha-1x.jpg 1x, ./images/img-mob/mob-miha-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  sizes=""
+                  type=""
+                />
+                <img src="./images/img-mob/mob-miha-1x.jpg" alt="miha" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>

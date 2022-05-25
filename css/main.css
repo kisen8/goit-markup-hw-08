@@ -208,6 +208,12 @@ img {
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .feedback__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .feedback__link {
   transition: color 250ms var(--cubic), fill 250ms var(--cubic);
   color: var(--text-color);
