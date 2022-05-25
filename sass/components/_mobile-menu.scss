@@ -87,7 +87,7 @@
 
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  // color: #2196f3;
   &:not(:last-child) {
     // margin-right: 20px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -102,4 +102,14 @@
   @media screen and (max-width: 480px) {
     font-size: 4vw;
   }
+}
+
+.feedback-mob__link {
+  color: var(--text-color);
+}
+
+.feedback-mob__link--other-color {
+  font-size: 34px;
+  line-height: 1.18;
+  color: #2196f3;
 }

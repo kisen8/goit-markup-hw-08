@@ -10,8 +10,22 @@
 }
 
 .logo-bottom {
-  display: block;
   margin-bottom: 20px;
+  color: var(--accent-color);
+
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  text-decoration: none;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-light {
@@ -23,6 +37,10 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts a {
@@ -36,7 +54,47 @@
 }
 
 .contacts-item {
+  text-align: center;
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer-box-one {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-box-two {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-boxes {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 61px;
+    margin-right: 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
 }

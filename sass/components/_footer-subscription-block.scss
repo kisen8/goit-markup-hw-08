@@ -1,7 +1,8 @@
 .subscription-block {
-  margin: 0;
-  margin-left: 93px;
-  width: 570px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: 570px;
+  }
 }
 
 .subscription-block .title {
@@ -15,4 +16,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
