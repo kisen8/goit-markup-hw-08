@@ -1130,8 +1130,6 @@ img {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1171,15 +1169,21 @@ img {
 }
 
 .modal-form {
-  width: 528px;
-  height: 581px;
+  width: 450px;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal-form-title {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1187,6 +1191,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    display: block;
+  }
 }
 
 .modal-form-list {
@@ -1204,7 +1213,7 @@ img {
 }
 
 .modal-form-item input {
-  width: 100%;
+  width: 370px;
   height: 40px;
   padding: 11px 12px 11px 42px;
   font-weight: 400;
@@ -1221,6 +1230,12 @@ img {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-item input {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .form-label {
@@ -1266,7 +1281,7 @@ img {
 }
 
 .modal-form-comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   font-weight: 400;
@@ -1282,6 +1297,11 @@ img {
 }
 .modal-form-comment:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-comment {
+    width: 448px;
+  }
 }
 
 /* checkbox , agreements*/
@@ -1303,10 +1323,16 @@ img {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .agreement-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agreement-label a {
