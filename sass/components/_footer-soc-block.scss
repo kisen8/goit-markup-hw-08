@@ -12,6 +12,10 @@
     width: 206px;
     height: 80px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .soc-block .title {
