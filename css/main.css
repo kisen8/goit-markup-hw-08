@@ -1174,6 +1174,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 480px) {
+  .modal-form {
+    width: 98vw;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form {
     width: 528px;
@@ -1225,6 +1231,12 @@ img {
   outline: none;
   cursor: pointer;
   transition: border 250ms var(--cubic);
+}
+@media screen and (max-width: 480px) {
+  .modal-form-item input {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .modal-form-item input:focus {
   border: 1px solid var(--accent-color);
@@ -1294,6 +1306,12 @@ img {
   outline: none;
   cursor: pointer;
   transition: border-color 250ms var(--cubic);
+}
+@media screen and (max-width: 480px) {
+  .modal-form-comment {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .modal-form-comment:focus {
   border-color: var(--accent-color);
