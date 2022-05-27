@@ -120,17 +120,21 @@ img {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
     justify-content: center;
-    margin-left: 88px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav {
-    margin-left: 93px;
   }
 }
 
@@ -235,6 +239,7 @@ img {
 @media screen and (min-width: 1200px) {
   .feedback__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -305,6 +310,9 @@ img {
 
 /* HERO */
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--bgc-hero-footer);
@@ -457,6 +465,8 @@ img {
 @media screen and (min-width: 768px) {
   .cards a {
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -512,10 +522,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cards-box {
-    height: 146px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
   }
 }
 
@@ -872,6 +879,11 @@ img {
     align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-box-two {
+    margin-left: 70px;
+  }
+}
 
 .footer-boxes {
   margin-bottom: 60px;
@@ -879,10 +891,8 @@ img {
 @media screen and (min-width: 768px) {
   .footer-boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
-    margin-left: 61px;
-    margin-right: 74px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -965,11 +975,6 @@ img {
   .soc-block {
     width: 206px;
     height: 80px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .soc-block {
-    margin-left: 70px;
   }
 }
 
@@ -1081,6 +1086,7 @@ img {
   .footer-field input {
     width: 358px;
     height: 50px;
+    margin-bottom: 0;
   }
 }
 .footer-field input::placeholder {
@@ -1508,6 +1514,8 @@ img {
 }
 
 .feedback-mob__link {
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--text-color);
 }
 

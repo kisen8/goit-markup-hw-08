@@ -40,17 +40,27 @@
   @media screen and (max-width: 767.98px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+
+    // justify-content: center;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .nav {
   @media screen and (min-width: 768px) {
     display: flex;
 
     justify-content: center;
-    margin-left: 88px;
+    // margin-left: 88px;
   }
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 93px;
+  // }
 }
 
 .nav-mob {
@@ -165,6 +175,7 @@
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
     }
   }
 }
